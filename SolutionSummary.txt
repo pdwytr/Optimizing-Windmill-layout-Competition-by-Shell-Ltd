@@ -1,0 +1,20 @@
+#1. Approach
+
+Genetic Algorithms approach is used to  maximize the totalAEP of the layout
+
+->Chromosome: Randomly generated 50 points layout satisfying perimeter and proximity constraints
+->Fitness Function: Function to improve TotalAEP of the farm
+->New population generation : Crossover of top layouts or Mutation
+->Selection: it is based on Highest Total Aep layouts from elite population
+
+#2.Algorithm Engineering
+
+->initial population: previous top performing layouts or random layouts if not available
+->Crossover: Select 50 points from randomly from the parent layouts
+->Mutation: Select portion of edge points plus randomly selecting remaining of the 50 points satisfying constraints
+->Velocity-Direction Profile: Weighted averages previously available 3 years of Velocity-Direction data
+
+#3. Tools used
+
+->Google colabs
+->Jupyter notebooks
